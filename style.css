@@ -1,0 +1,76 @@
+div.header-container {
+  padding: 15px;
+  height: 90px;
+  width: auto;
+  position: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #529EBF;
+}
+
+img.header-image {
+  height: 100px;
+  width: auto;
+  margin-left: -5%;
+}
+
+img.profile-picture {
+    margin: 15px;
+}
+
+img.profile-images {
+  width: 200px;
+  height: auto;
+}
+
+aside.profile-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 15px;
+ 
+  align-items: center;
+}
+
+.profile-pictures-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.profileStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.search-button-container {
+    align-content: right;
+    display: flex;
+}
+
+button.login-button {
+      height: 50px;
+      justify-self: flex-end;
+}
+
+main.site-contents-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-title {
+    color: white;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-kerning: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer.author-credit {
+     font-family: 'Noto Sans SC', sans-serif;
+     font-size: 10px;
+}
