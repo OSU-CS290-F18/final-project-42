@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beavstagram</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
+     <script src="index.js" charset="utf-8" defer></script>
+    
+  </head>
+
+  <body>
+   <header>
+       <div id="header-container">
+           <img src="beaver.png" class="header-image"/>
+         <span class="site-title">Beavstagram</span>
+         <div class="search-button-container">
+            <input type="text" id="search-input">
+            <button id="search-button"><i class="fa fa-search" style="font-color:black"></i></button>
+         </div>
+            <button id="login-button">Login</button>
+            <button id="insert-button"><i class="fas fa-plus"></i></button>
+       </div>
+   </header>
+    
+   <main class="site-contents-container">
+           <a href="" id="show-profile-button"><i class="fas fa-chevron-circle-right"></i></a>
+     <aside class="profile-container">
+          <a href="" id="collapse-profile-button"><i class="fas fa-chevron-circle-left"></i></a>
+
+          <img src="beaverProfile.png" alt="Profile Picture" class="profile-picture"/>
+       
+          <div class="profileStats" id="profile-info">
+            <span>{{Name}}</span> 
+          </div>
+              <h3>Photos</h3>
+          <div id="profile-pics-grid">
+            <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/04/cute-baby-beavers-3-57050e7c7f8ff__605.jpg" class="profile-images"/>
+            <img src="https://i.cbc.ca/1.4174906.1498228319!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/beaver-close-up-teeth.jpg" class="profile-images"/>
+            <img src="https://www.animalfactsencyclopedia.com/images/beaver950.jpg" class="profile-images"/>
+          </div>
+     
+     </aside>
+     <div class="photo-content-container">
+       
+       <div id="photo-feed-container">
+       
+         
+          <!--  photo detail object  -->  
+            <div class="Photocard-container" data-user="{{user}}" data-caption="{{caption}}">
+              <div class="image-container">
+                <img src="{{photoURL}}" alt="{{caption}}" class="post-image"/>
+              </div>
+            <div class="Icon-container">
+              <a href="" class=""><i class="fas fa-heart"></i></a>
+              <a href="" class=""><i class="fas fa-comment"></i></a>
+            </div>
+              <div class="caption-container">
+                  <span id="">{{user}}</span>
+                  <p id="">{{caption}}</p>
+              </div>
+           </div>
+       <!--  --------------------------------------------------------  -->  
+         
+       </div>
+     </div>
+     
+     
+    </main> 
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="photo-detail-modal" class="hidden">
+          <div class="Photocard-container" data-user="{{user}}" data-caption="{{caption}}">
+              <div class="image-container">
+                <img src="{{photoURL}}" alt="{{caption}}" class="post-image"/>
+              </div>
+            <div class="Icon-container">
+              <a href="" class=""><i class="fas fa-heart"></i></a>
+              <a href="" class=""><i class="fas fa-comment"></i></a>
+            </div>
+              <div class="caption-container">
+                  <span id="">{{user}}</span>
+                  <p id="">{{caption}}</p>
+              </div>
+           </div>
+    
+    </div>
+    
+    <div id="add-photo-modal" class="hidden">
+      <div class="add-photo-element">
+        <label for="add-photo-url">Photo URL:</label>
+        <input type="text" id="add-photo-url">
+      </div>
+      <div class="add-photo-element">
+        <label for="add-photo-caption">Caption:</label>
+        <input type="text" id="add-photo-caption">
+      </div>
+      <div class="">
+          <button type="submit">Insert</button>
+          <button type="reset">Cancel</button>
+      </div>
+    </div>
+    
+    
+  </body>
+ 
+  <footer id="author-credit">
+    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 	title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></div>
+  </footer>
+</html>

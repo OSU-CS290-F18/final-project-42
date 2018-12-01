@@ -1,0 +1,91 @@
+#header-container {
+  padding: 15px;
+  height: 90px;
+  width: auto;
+  position: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #529EBF;
+}
+
+div.photo-content-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+img.header-image {
+  height: 100px;
+  width: auto;
+  margin-left: -5%;
+}
+
+img.profile-picture {
+    margin: 15px;
+}
+
+img.profile-images {
+  width: 200px;
+  height: auto;
+}
+
+aside.profile-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 15px;
+  align-items: center;
+}
+
+#profile-pics-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.profileStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.search-button-container {
+    align-content: right;
+    display: flex;
+}
+
+button.login-button {
+      height: 50px;
+      justify-self: flex-end;
+}
+
+main.site-contents-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-title {
+    color: white;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+footer#author-credit {
+     font-family: 'Noto Sans SC', sans-serif;
+     font-size: 10px;
+}
