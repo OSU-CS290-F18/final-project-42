@@ -5,7 +5,7 @@
     Eleanor Hughes  hughesel
     
 
-**Title:** Beavestagram?
+**Title:** Beavstagram?
 
 # Project Breakdown Agreement: 
       **Amber    -  client-side JS
