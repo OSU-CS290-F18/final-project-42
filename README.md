@@ -10,5 +10,5 @@
 # Project Breakdown Agreement: 
       **Amber    -  client-side JS
       **Ann      -  server-side JS
-      **Brian    -  CSS
-      **Eleanor  -  HTML & Templating
+      **Brian    -  HTML & Templating
+      **Eleanor  -  CSS
