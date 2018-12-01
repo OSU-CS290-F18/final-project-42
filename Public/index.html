@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Scripts -->
-     <script src="/index.js" charset="utf-8" defer></script>
+     <script src="index.js" charset="utf-8" defer></script>
     
   </head>
 
@@ -20,8 +20,8 @@
            <img src="beaver.png" class="header-image"/>
          <span class="site-title">Beavestagram</span>
          <div class="search-button-container">
-            <input type="text" id="search-input" class="hidden">
-            <button class="search-button"><i class="fa fa-search" style="font-color:black"></i></button>
+            <input type="text" id="search-input">
+            <button id="search-button"><i class="fa fa-search" style="font-color:black"></i></button>
          </div>
             <button class="login-button">Login</button>
        </div>
@@ -52,7 +52,7 @@
        
          <div class="Photocard-container">
            <div class="image-container">
-             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg"/>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg" class="image"/>
            </div>
            <div class="Icon-container">
              <i class="fas fa-heart"></i>
@@ -66,7 +66,7 @@
            
          <div class="Photocard-container">
            <div class="image-container">
-              <img src="https://media.istockphoto.com/photos/begging-beaver-picture-id92911783?k=6&m=92911783&s=612x612&w=0&h=rOC9Sh8l_qIZKejK4J_hjg49fIRZPP2A9Pm65TJT7oI="/>
+              <img src="https://media.istockphoto.com/photos/begging-beaver-picture-id92911783?k=6&m=92911783&s=612x612&w=0&h=rOC9Sh8l_qIZKejK4J_hjg49fIRZPP2A9Pm65TJT7oI=" class="image"/>
            </div>
            <div class="Icon-container">
              <i class="fas fa-heart"></i>
@@ -80,7 +80,7 @@
          
           <div class="Photocard-container">
             <div class="image-container">
-                <img src="https://i.pinimg.com/474x/ee/72/c7/ee72c791cbda5d139b6fb2ca2705e8e9--baby-beaver-our-life.jpg"/>
+                <img src="https://i.pinimg.com/474x/ee/72/c7/ee72c791cbda5d139b6fb2ca2705e8e9--baby-beaver-our-life.jpg" class="image"/>
             </div>
            <div class="Icon-container">
              <i class="fas fa-heart"></i>
@@ -95,6 +95,9 @@
        </div>
      </div>
     </main> 
+
+    <div id="modal-backdrop" class="hidden"></div>
+
     
     <div class="messages-modal">
       
