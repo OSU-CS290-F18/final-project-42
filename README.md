@@ -7,8 +7,8 @@
 
 **Title:** Beavestagram?
 
-**Project Breakdown Agreement: 
-      Amber    -  client-side JS
-      Ann      -  server-side JS
-      Brian    -  CSS
-      Eleanor  -  HTML & Templating
+# Project Breakdown Agreement: 
+      **Amber    -  client-side JS
+      **Ann      -  server-side JS
+      **Brian    -  CSS
+      **Eleanor  -  HTML & Templating
