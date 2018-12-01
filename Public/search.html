@@ -5,9 +5,9 @@
     <title>Search</title>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:500,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:500,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
 
     <!-- Scripts -->
      <script src="/index.js" charset="utf-8" defer></script>
@@ -16,8 +16,8 @@
 
   <body>
    <header>
-       <div class="header-container">
-           <img src="beaver.png" class="header-image"/>
+         <div class="header-container">
+           <a href="/"><img src="beaver.png" class="header-image"/></a>
          <span class="site-title">Beavestagram</span>
          <div class="search-button-container">
             <input type="text" id="search-input" class="hidden">
@@ -26,13 +26,22 @@
             <button class="login-button">Login</button>
        </div>
    </header>
-    
+
    <main class="site-contents-container">
-   
-    </main> 
-  </body>
- 
-  <footer class="author-credit">
-    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        
+     <div class="search-info-container">
+          <span class="search-results">{{SearchResults}}</span>
+          <input type="text" id="search-input">
+        </div>
+        
+        <div class="photo-results-container">
+          
+        </div>
+     
+   </main> 
+   </body>
+  
+   <footer class="author-credit">
+    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></div>
   </footer>
 </html>
