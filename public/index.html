@@ -23,7 +23,16 @@
             <input type="text" id="search-input">
             <button id="search-button"><i class="fa fa-search" style="font-color:black"></i></button>
          </div>
-            <button id="login-button">Login</button>
+            <div class="filter-input-container">
+               <label for="filter-profiles">Profiles</label>
+                <select id="filter-profile" class="filter-input" name="filter-profile">
+                    <option selected value="">Any</option>
+                    <option>user1</option>
+                    <option>user2</option>
+                    <option>user3</option>
+                    <option>user4</option>
+                </select>
+            </div>
             <button id="insert-button"><i class="fas fa-plus"></i></button>
        </div>
    </header>
@@ -51,7 +60,7 @@
        
          
           <!--  photo detail object  -->  
-            <div class="Photocard-container" data-user="{{user}}" data-caption="{{caption}}">
+            <div class="Photocard-container" data-user="{{user}}" data-caption="{{caption}}" data-likes="{{likes}}">
               <div class="image-container">
                 <img src="{{photoURL}}" alt="{{caption}}" class="post-image"/>
               </div>

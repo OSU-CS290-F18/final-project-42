@@ -15,23 +15,33 @@
   </head>
 
   <body>
-   <header>
-         <div class="header-container">
-           <a href=".."><img src="beaver.png" class="header-image"/></a>
+     <header>
+       <div id="header-container">
+           <img src="beaver.png" class="header-image"/>
          <span class="site-title">Beavstagram</span>
          <div class="search-button-container">
-            <input type="text" id="search-input" class="">
-            <button class="search-button"><i class="fa fa-search" style="font-color:black"></i></button>
+            <input type="text" id="search-input">
+            <button id="search-button"><i class="fa fa-search" style="font-color:black"></i></button>
          </div>
-            <button class="login-button">Login</button>
+            <div class="filter-input-container">
+               <label for="filter-profiles">Profiles</label>
+                <select id="filter-profile" class="filter-input" name="filter-profile">
+                    <option selected value="">Any</option>
+                    <option>user1</option>
+                    <option>user2</option>
+                    <option>user3</option>
+                    <option>user4</option>
+                </select>
+            </div>
+            <button id="insert-button"><i class="fas fa-plus"></i></button>
        </div>
    </header>
 
    <main class="site-contents-container">
         
      <div class="search-info-container">
-          <span class="search-results">{{SearchResults}}</span>
-          <input type="text" id="search-input">
+          <span class="search-results">{{SearchQuery}}</span>
+          <input type="text" id="search-input" value="">
         </div>
         
         <div class="photo-results-container">
