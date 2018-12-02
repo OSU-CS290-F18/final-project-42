@@ -41,6 +41,8 @@ function addPostModalHandler(event) {
 function postHandler(event) {
     var photoURL = document.getElementById("add-photo-url").value;
     var caption = document.getElementById("add-photo-caption").value;
+
+    //add server interaction here
 }
 
 
@@ -52,12 +54,14 @@ function photoHandler(event) {
         backdrop.classList.toggle("hidden");
     }
     
+    //template and server interaction here to load photo
     
 }
 
 //this also closes the modal after clicking on the background
 function modalCloseHandler(event) {
-    addPhotoModal.classList.toggle("hidden");
+    if(!addPhotoModal.classList.contains("hidden"))
+        addPhotoModal.classList.add("hidden");
     backdrop.classList.toggle("hidden");
     document.getElementById("add-photo-url").value = "";
     document.getElementById("add-photo-caption").value = "";
