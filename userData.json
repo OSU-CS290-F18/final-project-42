@@ -77,4 +77,30 @@
             }
         ]
   },
+  "user4": {
+        "name": "user4",
+        "profile-photo-url": "https://www.thelocal.se/userdata/images/article/514ff3c327bf290f764bc0588ceb2293937781dc3f4c498573039ae07df18fd4.jpg",
+        "posts": [
+            {
+            "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
+            "likes": 0,
+            "caption": "Two Beavers"
+            },
+              {
+            "photoURL": "https://static.boredpanda.com/blog/wp-content/uploads/2016/04/cute-baby-beavers-3-57050e7c7f8ff__605.jpg",
+            "likes": 0,
+            "caption": "Tiny Beaver"
+            },
+            {
+            "photoURL": "https://i.cbc.ca/1.4174906.1498228319!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/beaver-close-up-teeth.jpg",
+            "likes": 0,
+            "caption": "Beaver showing teeth"
+            },
+              {
+            "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
+            "likes": 0,
+            "caption": "Two Beavers"
+            }
+        ]
+  }
 }

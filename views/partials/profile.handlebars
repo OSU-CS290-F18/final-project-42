@@ -1,0 +1,18 @@
+<aside id="profile-container">
+          <img src="{{profile-photo-url}}" alt="Profile Picture" class="profile-picture"/>
+       
+          <div class="profileStats" id="profile-info">
+            <span>{{name}}</span> 
+          </div>
+              <h3>Photos</h3>
+         
+         <!-- check if user has posts, create preview images if true -->
+              {{#if {{posts}}}}
+               <div id="profile-pic-grid">
+                  {{#each posts}}
+                    {{> profile-grid}}
+                  {{/each}}
+               </div>
+              {{/if}}     
+          
+</aside>
