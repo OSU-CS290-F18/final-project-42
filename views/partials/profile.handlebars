@@ -1,3 +1,12 @@
+/** 
+
+This receives the user object from json file. 
+Contains: name, profile-photo-url, posts [] 
+posts contains: photoURL, likes, caption
+
+**/
+
+
 <aside id="profile-container">
           <img src="{{profile-photo-url}}" alt="Profile Picture" class="profile-picture"/>
        
@@ -6,11 +15,11 @@
           </div>
               <h3>Photos</h3>
          
-         <!-- check if user has posts, create preview images if true -->
+         <!-- check if user has posts, if true create preview images -->
               {{#if {{posts}}}}
                <div id="profile-pic-grid">
                   {{#each posts}}
-                    {{> profile-grid}}
+                      <img class="profile-grid-image" src="{{photoURL}}" alt="{{caption}}"/>
                   {{/each}}
                </div>
               {{/if}}     
