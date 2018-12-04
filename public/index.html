@@ -20,17 +20,16 @@
            <img src="beaver.png" class="header-image"/>
          <span class="site-title">Beavstagram</span>
          <div class="search-button-container">
-            <input type="text" id="search-input">
+            <input type="text" name="search-text-input" id="search-text-input">
             <button id="search-button"><i class="fa fa-search" style="font-color:black"></i></button>
          </div>
             <div class="filter-input-container">
                <label for="filter-profiles">Profiles</label>
                 <select id="filter-profile" class="filter-input" name="filter-profile">
-                    <option selected value="">Any</option>
-                    <option>user1</option>
-                    <option>user2</option>
-                    <option>user3</option>
-                    <option>user4</option>
+                    <option selected value="">User 1</option>
+                    <option>User 2</option>
+                    <option>User 3</option>
+                    <option>User 4</option>
                 </select>
             </div>
             <button id="insert-button"><i class="fas fa-plus"></i></button>
@@ -60,19 +59,19 @@
        
          
           <!--  photo detail object  -->  
-            <div class="Photocard-container" data-user="{{user}}" data-caption="{{caption}}" data-likes="{{likes}}">
-              <div class="image-container">
-                <img src="{{photoURL}}" alt="{{caption}}" class="post-image"/>
-              </div>
-            <div class="Icon-container">
-              <a href="" class=""><i class="fas fa-heart"></i></a>
-              <a href="" class=""><i class="fas fa-comment"></i></a>
+          <div class="Photocard-container" data-user="{{name}}" data-caption="{{caption}}" data-likes="{{likes}}">
+            <div class="image-container">
+              <img src="{{photoURL}}" alt="{{caption}}" class="post-image"/>
             </div>
-              <div class="caption-container">
-                  <span id="">{{user}}</span>
-                  <p id="">{{caption}}</p>
-              </div>
-           </div>
+          <div class="Icon-container">
+            <span id="num-likes">{{likes}}</span><button href="" class=""><i class="fas fa-heart"></i></button>
+          </div>
+            <div class="caption-container">
+                <span id="user">{{name}}</span>
+                <p id="photo-caption">{{caption}}</p>
+            </div>
+</div>
+
        <!--  --------------------------------------------------------  -->  
          
        </div>
@@ -83,10 +82,11 @@
 
     <div id="modal-backdrop" class="hidden"></div>
     <div id="photo-detail-modal" class="hidden">
-          <div class="Photocard-container" data-user="{{user}}" data-caption="{{caption}}">
+          <!--<div class="Photocard-container" data-user="{{user}}" data-caption="{{caption}}">-->
             <div class="image-container">
               <img src="{{photoURL}}" alt="{{caption}}" class="post-image"/>
             </div>
+            <!--
             <div class="Icon-container">
               <a href="" class=""><i class="fas fa-heart"></i></a>
               <a href="" class=""><i class="fas fa-comment"></i></a>
@@ -95,7 +95,8 @@
                 <span id="">{{user}}</span>
                 <p id="">{{caption}}</p>
             </div>
-          </div>
+          -->
+          <!--</div>-->
     
     </div>
     
