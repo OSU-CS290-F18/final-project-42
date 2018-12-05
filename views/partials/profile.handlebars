@@ -18,7 +18,7 @@ posts contains: photoURL, likes, caption
          <!-- check if user has posts, if true create preview images -->
          {{#with posts}}
               {{#if posts}}
-               <div id="profile-pic-grid">
+               <div id="profile-pics-grid">
                   {{#each posts}}
                       <img class="profile-grid-image" src="{{photoURL}}" alt="{{caption}}"/>
                   {{/each}}
