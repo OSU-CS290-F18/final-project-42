@@ -33,17 +33,31 @@
             "caption": "Beaver showing teeth"
             },
               {
-            "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
+            "photoURL": "https://d1u1p2xjjiahg3.cloudfront.net/d9cebf64-216b-42c1-97cb-0a63e2c0d4ac.jpg",
             "likes": 0,
-            "caption": "Two Beavers"
+            "caption": "Beaver on a rock"
             }
         ]
         
   },
     "user2": {
         "name": "user2",
-        "profile-photo-url": "https://www.thelocal.se/userdata/images/article/514ff3c327bf290f764bc0588ceb2293937781dc3f4c498573039ae07df18fd4.jpg",
-          "posts": [
+        "profile-photo-url": "http://www.bu.edu/today/files/2015/06/h_BUtoday_iStock_000002107107_Large1.jpg",
+        "profile-photos": [
+                          {"photoURL": "https://image.shutterstock.com/image-photo/beaver-cutting-tree-build-dam-260nw-359994722.jpg",
+                           "likes": 0,
+                           "caption": "Beaver chewing on a tree"},
+                           {"photoURL": "https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/content_grid/public/thumbnails/image/Windrose%208-7-16_25.jpg",
+                           "likes": 0,
+                           "caption": "Adult and child beaver in the water"},
+                           {"photoURL": "https://www.oregonzoo.org/sites/default/files/styles/content-teaser/public/gallery/images/H_orig_Americanbeaverswimming.jpg",
+                           "likes": 0,
+                           "caption": "Swimming Beaver"},
+                          {"photoURL": "https://www.nps.gov/common/uploads/stories/images/nri/20150121/articles/86E90BAB-DB0A-7102-1203CFE0AF85584D/86E90BAB-DB0A-7102-1203CFE0AF85584D.jpg",
+                           "likes": 0,
+                           "caption": "Beaver with their child}
+                          ],  
+        "posts": [
             {
             "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
             "likes": 0,
@@ -60,15 +74,29 @@
             "caption": "Beaver showing teeth"
             },
               {
-            "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
+            "photoURL": "https://d1u1p2xjjiahg3.cloudfront.net/d9cebf64-216b-42c1-97cb-0a63e2c0d4ac.jpg",
             "likes": 0,
-            "caption": "Two Beavers"
+            "caption": "Beaver on a rock"
             }
         ]
   },
     "user3": {
         "name": "user3",
-        "profile-photo-url": "https://www.thelocal.se/userdata/images/article/514ff3c327bf290f764bc0588ceb2293937781dc3f4c498573039ae07df18fd4.jpg",
+        "profile-photo-url": "https://pbs.twimg.com/profile_images/188682298/BeaverFace_400x400.jpg",
+        "profile-photos": [
+                          {"photoURL": "https://static01.nyt.com/images/2017/12/21/climate/21CLI-BEAVERS/merlin_131321107_e96f4279-5637-404a-b092-261b19d09bcd-articleLarge.jpg",
+                           "likes": 0,
+                           "caption": "Beaver carrying branch"},
+                           {"photoURL": "https://www.nps.gov/voya/learn/nature/images/VOYA_web_beaver_chew_tree.jpg",
+                           "likes": 0,
+                           "caption": "Beaver building his home"},
+                           {"photoURL": "https://www.nsf.gov/news/mmg/media/images/yellownp1_f.jpg",
+                           "likes": 0,
+                           "caption": "Beaver chewing on a stick"},
+                          {"photoURL": "http://mediad.publicbroadcasting.net/p/wjsp/files/201808/American_Beaver.jpg",
+                           "likes": 0,
+                           "caption": "Sitting beaver"}
+                          ],  
         "posts": [
             {
             "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
@@ -86,15 +114,29 @@
             "caption": "Beaver showing teeth"
             },
               {
-            "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
+            "photoURL": "https://d1u1p2xjjiahg3.cloudfront.net/d9cebf64-216b-42c1-97cb-0a63e2c0d4ac.jpg",
             "likes": 0,
-            "caption": "Two Beavers"
+            "caption": "Beaver on a rock"
             }
         ]
   },
   "user4": {
         "name": "user4",
-        "profile-photo-url": "https://www.thelocal.se/userdata/images/article/514ff3c327bf290f764bc0588ceb2293937781dc3f4c498573039ae07df18fd4.jpg",
+        "profile-photo-url": "http://wildlife.ohiodnr.gov/portals/wildlife/Species%20and%20Habitats/Species%20Guide%20Index/Images/beaver1.jpg",
+        "profile-photos": [
+                          {"photoURL": "https://www-tc.pbs.org/wnet/nature/files/2014/05/beaver-factsheet.jpg",
+                           "likes": 0,
+                           "caption": "Beaver with wet fur"},
+                           {"photoURL": "https://www.cbc.ca/beaverwhisperer/ftp_episodes/beaverwhisperer/images/beaverwhisperers_620.jpg",
+                           "likes": 0,
+                           "caption": "Beaver with a piece of a tree"},
+                           {"photoURL": "http://napariverhistorytour.com/wp-content/uploads/2015/02/Beaver-1.jpg",
+                           "likes": 0,
+                           "caption": "Beaver chewing on a stick while in the water"},
+                          {"photoURL": "https://statesymbolsusa.org/sites/statesymbolsusa.org/files/styles/large/public/symbol-place-images/2beaverCastorcanadensis.jpg",
+                           "likes": 0,
+                           "caption": "Beaver nibbling on some leaves"}
+                          ],
         "posts": [
             {
             "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
@@ -112,9 +154,9 @@
             "caption": "Beaver showing teeth"
             },
               {
-            "photoURL": "https://www.animalfactsencyclopedia.com/images/beaver950.jpg",
+            "photoURL": "https://d1u1p2xjjiahg3.cloudfront.net/d9cebf64-216b-42c1-97cb-0a63e2c0d4ac.jpg",
             "likes": 0,
-            "caption": "Two Beavers"
+            "caption": "Beaver on a rock"
             }
         ]
   }
