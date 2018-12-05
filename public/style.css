@@ -122,7 +122,15 @@ main.site-contents-container {
 
 footer#author-credit {
      font-family: 'Noto Sans SC', sans-serif;
-     font-size: 10px;
+     font-size: 15px;
+
+}
+
+#author-credit {
+  display: flex;
+  justify-content: flex-end;
+  position: bottom;
+  padding: 5px;
 }
 
 #insert-button {
