@@ -93,6 +93,7 @@ function postHandler(event) {
                 name: profileSelect.value,
                 likes: 0
             });
+            photoFeedContainer.insertAdjacentElement("beforeend", postHTML);
         }
         else {
             console.log("error adding post");
