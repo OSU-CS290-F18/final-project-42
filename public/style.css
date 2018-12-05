@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 #header-container {
   padding: 15px;
   height: 90px;
@@ -10,7 +14,7 @@
 }
 
 div.photo-content-container {
-  
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -20,6 +24,10 @@ img.header-image {
   height: 100px;
   width: auto;
   margin-left: -5%;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 img.profile-picture {
@@ -69,6 +77,13 @@ main.site-contents-container {
 .site-title {
     color: white;
     font-family: 'Noto Sans SC', sans-serif;
+    font-size: 50px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.site-title:hover {
+  cursor: pointer;
 }
 
 .hidden {
@@ -88,4 +103,71 @@ main.site-contents-container {
 footer#author-credit {
      font-family: 'Noto Sans SC', sans-serif;
      font-size: 10px;
+}
+
+#insert-button {
+  height: 65px;
+  width: 65px;
+  border-radius: 10px;
+  background-color: #dab3ff;
+  color: white;
+  border: none;
+}
+
+#insert-button:hover {
+  cursor: pointer;
+}
+
+#insert-button .fas.fa-plus {
+  font-size: 50px;
+}
+
+#search-button:hover {
+  cursor: pointer;
+
+}
+
+#search-text-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+  border-radius: 1px;
+  height: 40px;
+  width: 300px;
+  background-color: inherit;
+  font-size: 25px;
+  color: white;
+}
+
+#search-button {
+  background-color: #7db6cf;
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.filter-input-container {
+  color: white;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 25px;
+}
+
+#filter-profile {
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #4d4d4d;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  background-color: #e6e6e6;
+}
+
+#filter-profile .filter-input {
+  border: none;
 }
