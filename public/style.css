@@ -23,7 +23,6 @@ div.photo-content-container {
 img.header-image {
   height: 100px;
   width: auto;
-  margin-left: -5%;
 }
 
 img:hover {
