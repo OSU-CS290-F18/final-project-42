@@ -13,12 +13,14 @@ var express = require('express');
 var app = express();
 var exphbs = require('express-handlebars');
 var MongoClient = require('mongodb').MongoClient;
-var userData = require("./userData");
-var beavsta = "beavsta";
+// var userData = require("./userData");
+var bodyParser = require('body-parser');
+var userData = "userData";
+// var userCursor = userData.find({});
 var cache = new Map();
 var PORT = 3000
 
-// DO NOT COMMIT WITH PASSWORD/USERNAME
+// DO NOT COMMIT WITH PASSWORD/USERNAME (no one cares)
 
 // var mongoHost = process.env.MONGO_HOST;
 // var mongoPort = process.env.MONGO_PORT || '27017';
@@ -36,26 +38,38 @@ var mongoURL = "mongodb://" +
   mongoUsername + ":" + mongoPassword + "@" + mongoHost + ":" + mongoPort +
   "/" + mongoDBName;
 
+app.use(bodyParser.json());
+
 app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.use(express.static("public"));
-console.log(userData);
-console.log(Object.prototype.toString.call(userData));
+// console.log(userData);
+// console.log(Object.prototype.toString.call(userData));
 
 //Calls main page from handlesbars
 app.get('/', function(req, res, next){
   res.status(200).render('main-page');
 });
 
-app.get('/user#', function(req, res, next){
-  res.status(200).render('main-page');
+app.get('/:user', function(req, res, next){
+  // var user = req.params.user.toLowerCase();
+  // console.log(user);
+  var userCollection = mongoDB.collection('user');
+  userCollection.find({}).toArray(function(err, userDocs){
+    if(err){
+      res.status(500).send("Check DB conection.");
+    }
+    res.status(200).render('partials/profile',{user: userDocs
+    });
+  });
 });
 
 
 
 app.get('/addPost', function(req, res, next){
   res.status(200).render('main-page');
+
 });
 app.get('/addLike', function(req, res, next){
   res.status(200).render('main-page');
@@ -63,21 +77,22 @@ app.get('/addLike', function(req, res, next){
 
 app.get('/blow', function(req, res, next){
   res.status(200);
-  mongoDB.collection(beavsta).drop(function(err, delOK) {
-    if (delOK) console.log("It's gone BB");
-    mongoDB.createCollection(beavsta, function(err, res) {
-      if (err) throw err;
-      console.log("Collection created!");
-      mongoDB.collection(beavsta).insert(userData, function(err, records){
-        if (err) throw err;
-        console.log("Data inserted");
-      });
-    });
-  });
+  // mongoDB.collection(beavsta).drop(function(err, delOK) {
+  //   if (delOK) console.log("It's gone BB");
+  //   mongoDB.createCollection(beavsta, function(err, res) {
+  //     if (err) throw err;
+  //     console.log("Collection created!");
+  //     mongoDB.collection(beavsta).insert(userData, function(err, records){
+  //       if (err) throw err;
+  //       console.log("Data inserted");
+  //     });
+  //   });
+  // });
 });
 
-app.get('*', function (req, res, next) {
+app.get('/404', function (req, res, next) {
   res.status(404).render('404');
+  console.log("hello?");
 });
 
 
