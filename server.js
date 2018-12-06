@@ -53,7 +53,7 @@ app.get('/', function(req, res, next){
 });
 
 app.get('/:user', function(req, res, next){
-  // var user = req.params.user.toLowerCase();
+  var user = req.params.user.toLowerCase();
   // console.log(user);
   var userCollection = mongoDB.collection('user');
   userCollection.find({}).toArray(function(err, userDocs){
