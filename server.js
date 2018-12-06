@@ -1,5 +1,5 @@
 /*
- * Sever side Js for Final Project due :12/6/18
+ * Sever side Js for Final Project due: 12/6/18
  *
  *
  * name: Team 42
@@ -25,7 +25,11 @@ var PORT = 3000
 // var mongoUsername = process.env.MONGO_USERNAME;
 // var mongoPassword = process.env.MONGO_PASSWORD;
 // var mongoDBName = process.env.MONGO_DB_NAME;
-
+var mongoUsername = "cs290_kentann";
+var mongoPassword = "cs290_kentann";
+var mongoHost = "classmongo.engr.oregonstate.edu";
+var mongoPort = "27017";
+var mongoDBName = "cs290_kentann";
 
 // var mongoURL = 'mongo://classmongo.engr.oregonstate.edu:27017/cs290_kentann'
 var mongoURL = "mongodb://" +
@@ -48,14 +52,12 @@ app.get('/user#', function(req, res, next){
   res.status(200).render('main-page');
 });
 
+
+
 app.get('/addPost', function(req, res, next){
   res.status(200).render('main-page');
 });
 app.get('/addLike', function(req, res, next){
-  res.status(200).render('main-page');
-});
-
-app.get('/404', function(req, res, next){
   res.status(200).render('main-page');
 });
 
@@ -66,27 +68,25 @@ app.get('/blow', function(req, res, next){
     mongoDB.createCollection(beavsta, function(err, res) {
       if (err) throw err;
       console.log("Collection created!");
-      mongoDB.collection(beavsta).insertMany(userData, function(err, records){
+      mongoDB.collection(beavsta).insert(userData, function(err, records){
         if (err) throw err;
         console.log("Data inserted");
-
       });
-      // res.write("Hello");
     });
   });
-
 });
 
-app.listen(PORT, function () {
-  console.log("== Server listening on port", PORT);
+app.get('*', function (req, res, next) {
+  res.status(404).render('404');
 });
-// });
-// MongoClient.connect(mongoURL, function (err, client) {
-//   if (err) {
-//     throw err;
-//   }
-//   mongoDB = client.db(mongoDBName);
-//   app.listen(PORT, function () {
-//     console.log("== Server listening on port", PORT);
-//   });
-// });
+
+
+MongoClient.connect(mongoURL, function (err, client) {
+  if (err) {
+    throw err;
+  }
+  mongoDB = client.db(mongoDBName);
+  app.listen(PORT, function () {
+    console.log("== Server listening on port", PORT);
+  });
+});

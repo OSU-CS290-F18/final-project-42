@@ -1,5 +1,5 @@
 {
-  "user1": {
+ "user1" :  {
         "name": "user1",
         "profile-photo-url": "https://www.thelocal.se/userdata/images/article/514ff3c327bf290f764bc0588ceb2293937781dc3f4c498573039ae07df18fd4.jpg",
         "profile-photos": [
@@ -40,7 +40,7 @@
         ]
         
   },
-    "user2": {
+   "user2": {
         "name": "user2",
         "profile-photo-url": "http://www.bu.edu/today/files/2015/06/h_BUtoday_iStock_000002107107_Large1.jpg",
         "profile-photos": [
@@ -55,7 +55,8 @@
                            "caption": "Swimming Beaver"},
                           {"photoURL": "https://www.nps.gov/common/uploads/stories/images/nri/20150121/articles/86E90BAB-DB0A-7102-1203CFE0AF85584D/86E90BAB-DB0A-7102-1203CFE0AF85584D.jpg",
                            "likes": 0,
-                           "caption": "Beaver with their child}
+                           "caption": "Beaver with their child"
+                          }
                           ],  
         "posts": [
             {
@@ -80,7 +81,7 @@
             }
         ]
   },
-    "user3": {
+       "user3" : {
         "name": "user3",
         "profile-photo-url": "https://pbs.twimg.com/profile_images/188682298/BeaverFace_400x400.jpg",
         "profile-photos": [
@@ -120,7 +121,7 @@
             }
         ]
   },
-  "user4": {
+   "user4" : {
         "name": "user4",
         "profile-photo-url": "http://wildlife.ohiodnr.gov/portals/wildlife/Species%20and%20Habitats/Species%20Guide%20Index/Images/beaver1.jpg",
         "profile-photos": [
