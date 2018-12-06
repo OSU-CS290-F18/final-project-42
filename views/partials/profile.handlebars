@@ -17,13 +17,15 @@ posts contains: photoURL, likes, caption
          
          <!-- check if user has posts, if true create preview images -->
          
-              {{#if this.posts}}
+             {{#with posts}}
+              {{#if posts}}
                <div id="profile-pics-grid">
-                  {{#each this.posts}}
+                  {{#each posts}}
                       <img class="profile-grid-image" src="{{photoURL}}" alt="{{caption}}"/>
                   {{/each}}
                </div>
               {{/if}}
+         {{/with}}
          
           
 </aside>
