@@ -124,6 +124,7 @@ function photoHandler(event) {
     if(event.target.classList.contains("post-image")) {
         console.log("image clicked, event.target: ", event.target);
         backdrop.classList.toggle("hidden");
+        photoDetailModal.classList.toggle("hidden");
 
     }
     if(event.target.classList.contains("like")) { //update post data in server 
@@ -159,6 +160,9 @@ function photoHandler(event) {
 function modalCloseHandler(event) {
     if(!addPhotoModal.classList.contains("hidden"))
         addPhotoModal.classList.add("hidden");
+    if(!photoDetailModal.classList.toggle("hidden"))
+        photoDetailModal.classList.toggle("hidden");
+
     backdrop.classList.toggle("hidden");
     document.getElementById("add-photo-url").value = "";
     document.getElementById("add-photo-caption").value = "";
