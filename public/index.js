@@ -73,7 +73,12 @@ function addPostModalHandler(event) {
     //console.log("toggle modal hidden");
 }
 
-function postHandler(event) { //add post to database through server
+/*
+    task: add a post to the data for the current user
+    request URL: /addPost
+    data: photoURL, caption, name, likes
+*/
+function postHandler(event) { 
     var photoURL = document.getElementById("add-photo-url").value;
     var caption = document.getElementById("add-photo-caption").value;
 
@@ -109,8 +114,11 @@ function postHandler(event) { //add post to database through server
     
 }
 
-
-
+/*
+    task: increment the number of likes on the given post
+    request URL: /addLike
+    data: likes (new number of likes on the post), post (pointer to the post container to update data)
+*/
 function photoHandler(event) { 
     console.log("photo container clicked");
     if(event.target.classList.contains("post-image")) {
@@ -125,12 +133,16 @@ function photoHandler(event) {
         var request = new XMLHttpRequest();
         var requestURL = "/addLike";
         request.open('POST', requestURL);
-        var requestBody = JSON.stringify({ likes: parseInt(numLikes.textContent)+1 });
+        var requestBody = JSON.stringify({ 
+            likes: parseInt(numLikes.textContent)+1,
+            post: event.target.parentNode.parentNode
+        });
         request.setRequestHeader('Content-Type', 'application/JSON');
         request.addEventListener('load', function(event) {
             if(event.target.status === 200) {
                 console.log("added a like");
                 numLikes.textContent = parseInt(numLikes.textContent)+1;
+                numLikes.parentNode.setAttribute("data-price", parseInt(numLikes.textContent)+1);
             }
             else {
                 console.log("error adding like");
@@ -160,6 +172,11 @@ function toggleProfileHandler(event) {
 
 }
 
+/*
+    task: change which profile is currently displayed on the main page
+    request URL: /:user (basically, each url corresponds to a version of the main page with the respective profile displayed)
+    data: user ID, sent via url
+*/
 function profileChange(event) {    //reload the page with the correct profile
     console.log("change to profile:", profileSelect.value);
     
