@@ -327,20 +327,79 @@ div#add-photo-modal {
   background-color: white;
   z-index:1100;
   position: relative;
-  height: 300px;
+  height: auto;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding: 25px;
   border-radius: 5px;
   font-family: 'Noto Sans SC', sans-serif;
-  font-size: 30px;
-  border:
+  font-size: 25px;
+  border: 2px solid #cccccc red;
+  justify-content: space-around;
 }
 
 #post-button, #cancel-post-button {
   border-radius: 3px;
   font-family: 'Noto Sans SC', sans-serif;
   border: 2px solid #cccccc;
+  background-color: #dab3ff;
+  color: white;
+  position: bottom;
+  padding: 5px;
+  font-size: 25px;
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+button#post-button {
+  width: 80px;
+  justify-content: center;
+}
+
+button#cancel-post-button {
+  width: 110px;
+  justify-content: center;
+}
+
+#post-button {
+  justify-content: flex-start;
+}
+
+#post-button:hover {
+  cursor: pointer;
+}
+
+#cancel-post-button:hover {
+  cursor: pointer;
+}
+
+#cancel-post-button {
+  float: right;
+}
+
+.add-photo-element {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#add-photo-url, #add-photo-caption {
+  width: auto;
+  margin-left: 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid #cccccc;
   background-color: #e6e6e6;
+  color: #4d4d4d;
+}
+
+input#add-photo-url {
+  float: right;
+  width: 70%
+}
+
+input#add-photo-caption {
+  float: right;
+  width: 75%;
 }
