@@ -187,6 +187,8 @@ function profileChange(event) {    //reload the page with the correct profile
     var request = new XMLHttpRequest();
     var requestURL = "/" + profileSelect.value;
 
+    request.open('GET', requestURL);
+
     request.addEventListener('load', function(event) {
         if(event.target.status === 200) {
             console.log("changed profiles");
@@ -196,7 +198,6 @@ function profileChange(event) {    //reload the page with the correct profile
         }
 
     });
-    request.open('GET', requestURL);
     request.send();
 
 }
