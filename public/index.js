@@ -39,6 +39,9 @@ function searchHandler(event) {
     console.log("search button clicked");
     var text = searchTextInput.value.toUpperCase();
 
+    if(text === "") {
+        return;
+    }
     console.log("search text:", text);
     var photocardContainer = document.getElementsByClassName("Photocard-container");
     var userStr = [];
@@ -46,18 +49,19 @@ function searchHandler(event) {
     for(var i = 0; i < photocardContainer.length; i++) {
         userStr.push(photocardContainer[i].getAttribute("data-user"));
         userStr[i] = userStr[i].toUpperCase();
+
         captionStr.push(photocardContainer[i].getAttribute("data-caption"));
         captionStr[i] = captionStr[i].toUpperCase();
     }
 
     for(var j = 0; j < user.length; j++) {
-        if(userStr[i].includes(text) || captionStr[i].includes(text)) {
-            if(photocardContainer.classList.contains("hidden")) 
-                photocardContainer.classList.toggle("hidden");
+        if(userStr[j].includes(text) || captionStr[j].includes(text)) {
+            if(photocardContainer[j].classList.contains("hidden")) 
+                photocardContainer[j].classList.toggle("hidden");
         }
         else {
-            if(!photocardContainer.classList.contains("hidden"))
-                photocardContainer.classList.add("hidden")
+            if(!photocardContainer[j].classList.contains("hidden"))
+                photocardContainer[j].classList.add("hidden")
         }
     }
   
