@@ -206,7 +206,7 @@ footer#author-credit {
 
 #toggle-profile-button {
   border: none;
-  background-color: #e6e6e6 /*white*/;
+  background-color: inherit;
 }
 
 #toggle-profile-button .fas.fa-chevron-circle-left {
