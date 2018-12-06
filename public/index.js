@@ -69,7 +69,7 @@ function addPostModalHandler(event) {
     //console.log("toggle modal hidden");
 }
 
-function postHandler(event) {
+function postHandler(event) { //add post to database through server
     var photoURL = document.getElementById("add-photo-url").value;
     var caption = document.getElementById("add-photo-caption").value;
 
@@ -107,14 +107,14 @@ function postHandler(event) {
 
 
 
-function photoHandler(event) {
+function photoHandler(event) { 
     console.log("photo container clicked");
     if(event.target.classList.contains("post-image")) {
         console.log("image clicked, event.target: ", event.target);
         backdrop.classList.toggle("hidden");
 
     }
-    if(event.target.classList.contains("like")) {
+    if(event.target.classList.contains("like")) { //update post data in server 
         console.log("liked, event.target: ", event.target);
         //increment like counter
         var numLikes = event.target.parentNode.firstChild;
