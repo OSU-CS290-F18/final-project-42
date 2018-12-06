@@ -248,7 +248,7 @@ aside#profile-container {
 .Photocard-container {
   width: 850px;
   min-height: auto;
-  margin: 15px;
+  margin-bottom: 35px;
   border-radius: 10px;
   border: 2px solid #cccccc;
   padding-top: 15px;
@@ -264,7 +264,6 @@ aside#profile-container {
   display: flex;
   justify-content: flex-end;
   position: top;
-  height: 50px;
 }
 
 button.like:hover {
