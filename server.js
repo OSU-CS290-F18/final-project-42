@@ -62,14 +62,32 @@ app.get('/:user', function(req, res, next){
     }
     res.status(200).render('partials/profile',{user: userDocs
     });
+    console.log('userCollection');
   });
 });
 
-
-
 app.get('/addPost', function(req, res, next){
-  res.status(200).render('main-page');
-
+  var user = req.params.user.toLowerCase();
+  if (req.body && req.body.url && req.body.caption) {
+    var userCollection = mongoDB.collection('user');
+    userCollection.updateOne(
+      {userId: user},
+      {$push:{posts:{url:req.body.url, caption:req.body.caption}}},
+      function(err, results){
+        if(err){
+          res.status(500).send("Error Saving Photo to DB");
+        }
+        else if (result,matchedCount > 0){
+          res.satus(200).sende("Success");
+        }
+        else{
+          next();
+        }
+      }
+    );
+  } else {
+  res.status(400).send("Request needs a body with a URL and caption");
+ }
 });
 app.get('/addLike', function(req, res, next){
   res.status(200).render('main-page');
@@ -90,7 +108,7 @@ app.get('/blow', function(req, res, next){
   // });
 });
 
-app.get('/404', function (req, res, next) {
+app.get('*', function (req, res, next) {
   res.status(404).render('404');
   console.log("hello?");
 });
