@@ -1,4 +1,4 @@
-{
+[
   "user1": {
         "name": "user1",
         "profile-photo-url": "https://www.thelocal.se/userdata/images/article/514ff3c327bf290f764bc0588ceb2293937781dc3f4c498573039ae07df18fd4.jpg",
@@ -160,4 +160,4 @@
             }
         ]
   }
-}
+]
