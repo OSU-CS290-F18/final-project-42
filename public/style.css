@@ -26,7 +26,6 @@ div.photo-content-container {
 img.header-image {
   height: 100px;
   width: auto;
-  margin-left: -5%;
 }
 
 img:hover {
@@ -42,19 +41,6 @@ img.profile-image {
   height: auto;
 }
 
-aside.profile-container {
-  display: flex;
-  flex-direction: column;
-  background-color: lightgray;
-  padding: 10px;
-  align-items: center;
-}
-
-#profile-pics-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 div.profileStats {
     display: flex;
@@ -204,6 +190,10 @@ footer#author-credit {
 }
 
 /* ASIDE STYLE */
+#toggle-profile-button {
+  height: 75px;
+  position: fixed;
+}
 #toggle-profile-button:hover {
   cursor: pointer;
 }
@@ -227,8 +217,8 @@ footer#author-credit {
   font-size: 50px;
 }
 
-aside #profile-container {
-  position: fixed;
+aside#profile-container {
+  float: left;
 }
 
 #profile-container {
